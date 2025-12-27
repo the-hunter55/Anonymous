@@ -1,13 +1,13 @@
-# 👋 Hi, I'm the-hunter55
+# 👋 Hi, I'm Daniel oneya 
 
 > Crafting clean, performant code and building delightful developer experiences.
 
 ---
 
 ## 🔭 About Me
-I'm a software engineer who loves solving real-world problems with elegant, maintainable code. I focus on shipping production-ready applications, mentoring teammates, and contributing to open source. I enjoy learning new technologies and turning ideas into products.
+I'm a tech student who loves solving real-world problems with elegant, maintainable code. I focus on shipping production-ready applications, mentoring teammates, and contributing to open source. I enjoy learning new technologies and turning ideas into products.
 
-- 🔭 Currently building: a modern web app that simplifies X (replace X with your project focus)
+- 🔭 Currently building: a modern bot to run your WhatsApp (replace space, cypher and even kingbot)
 - 🌱 Learning: advanced systems design, observability, or whatever you're learning
 - 🧭 Interests: developer tooling, performance, UX, distributed systems
 
