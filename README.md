@@ -1,86 +1,39 @@
-# 👋 Hi, I'm Daniel oneya 
+# Anonymous WhatsApp Bot
 
-> Crafting clean, performant code and building delightful developer experiences.
+This repository contains a minimal WhatsApp bot built with Node.js and whatsapp-web.js. It runs using a headless Chromium instance and stores authentication locally via the LocalAuth strategy.
 
----
+WARNING: Use this bot responsibly. Sending unsolicited messages or automating abusive behavior may violate WhatsApp's terms of service. This repository is provided for educational purposes.
 
-## 🔭 About Me
-I'm a tech student who loves solving real-world problems with elegant, maintainable code. I focus on shipping production-ready applications, mentoring teammates, and contributing to open source. I enjoy learning new technologies and turning ideas into products.
+## Features
+- QR login (scan once with your phone)
+- !ping, !help, !echo commands
+- !send <number>|<message> — send a message from the bot to a specified phone number
 
-- 🔭 Currently building: a modern bot to run your WhatsApp (replace space, cypher and even kingbot)
-- 🌱 Learning: advanced systems design, observability, or whatever you're learning
-- 🧭 Interests: developer tooling, performance, UX, distributed systems
+## Setup
+1. Clone the repo:
 
----
+   git clone https://github.com/the-hunter55/Anonymous.git
+   cd Anonymous
 
-## 💼 What I Do
-- Design and implement full-stack web applications
-- Build robust APIs and microservices
-- Improve app performance and scalability
-- Mentor engineers and lead technical projects
-- Advocate for strong testing and CI/CD practices
+2. Install dependencies:
 
----
+   npm install
 
-## 🛠️ Top Skills
-- Languages: JavaScript / TypeScript, Python, Go (customize)
-- Frontend: React, Next.js, Tailwind CSS (customize)
-- Backend: Node.js, Express, FastAPI, gRPC (customize)
-- Data & DevOps: PostgreSQL, Redis, Docker, Kubernetes, GitHub Actions (customize)
-- Testing & Quality: Jest, Playwright, PyTest, linting, code review
+3. Start the bot:
 
----
+   npm start
 
-## ⭐ Selected Projects
-- [Project A](https://github.com/the-hunter55/project-a) — Short 1–2 line description of what it does and impact.
-- [Project B](https://github.com/the-hunter55/project-b) — Short 1–2 line description, tech used, and a measurable result if available.
-- [Project C](https://github.com/the-hunter55/project-c) — Short 1–2 line description; mention open-source contributions if applicable.
+4. When the bot prints a QR in the terminal, scan it from WhatsApp (Settings -> Linked devices -> Link a device).
 
-(Replace the links and descriptions with your real projects. Consider pinning these on your GitHub profile.)
+5. Commands (chat the bot from your WhatsApp number after login):
+   - `!ping` — replies `pong`
+   - `!help` — shows help
+   - `!echo hello` — replies `hello`
+   - `!send 15551234567|Hello` — the bot will send `Hello` to +1 555 123 4567
 
----
+## Notes
+- The bot uses `LocalAuth` and will create a `.wwebjs_auth` folder to persist session data.
+- If you want to run this in a server/Docker, ensure a suitable Chromium is available and that you keep the auth folder persistent.
 
-## 📈 GitHub Stats (optional)
-You can add dynamic stats using services like [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats). Example snippets:
-
-```md
-<!-- GitHub stats card -->
-![the-hunter55's GitHub stats](https://github-readme-stats.vercel.app/api?username=the-hunter55&show_icons=true&theme=radical)
-
-<!-- Top languages -->
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=the-hunter55&layout=compact)
-```
-
----
-
-## 🤝 How to Work With Me
-- Open to: Full-time roles, contracting, mentoring, and select collaborations
-- Preferred roles: Senior Engineer, Staff Engineer, Tech Lead (customize)
-- Timezone / availability: Add your timezone and typical working hours
-
----
-
-## 📫 Get in Touch
-- Email: name [at] example.com (or link to contact form)
-- LinkedIn: [Your Name](https://www.linkedin.com/in/yourprofile)
-- Twitter/X: [@yourhandle](https://twitter.com/yourhandle)
-- Website / Portfolio: [yourdomain.com](https://yourdomain.com)
-
----
-
-## 🧩 Want to collaborate?
-If you like my work or want to partner on a project, open an issue on one of my repos, DM me on [LinkedIn](https://www.linkedin.com), or email me — I respond quicker to concise proposals with clear goals and timelines.
-
----
-
-## ⚡ Fun Facts
-- I love learning one new programming trick every week.
-- Favorite keyboard layout: QWERTY / Colemak / Dvorak (customize)
-- Coffee lover, gym-goer, and avid reader of tech blogs.
-
----
-
-Thanks for visiting — let's build something great. 👇
-
-<!-- Replace below with a short one-liner call-to-action -->
-If you'd like, I can customize this README with your exact role, skills, project links, badges, and contact details.
+## License
+MIT
