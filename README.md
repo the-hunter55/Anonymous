@@ -1,4 +1,4 @@
-# Anonymous WhatsApp Bot
+# APPX-G WhatsApp Bot
 
 This repository contains a minimal WhatsApp bot built with Node.js and whatsapp-web.js. It runs using a headless Chromium instance and stores authentication locally via the LocalAuth strategy.
 
@@ -37,3 +37,4 @@ WARNING: Use this bot responsibly. Sending unsolicited messages or automating ab
 
 ## License
 MIT
+!send 0725882486|heWhatsAppeWWhhaattssAAptsApptsApp
